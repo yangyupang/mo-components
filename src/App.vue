@@ -1,19 +1,13 @@
+
 <template>
   <div id="app">
-    <buttonView></buttonView>
+    <back-top>
+      <router-view />
+    </back-top>
   </div>
 </template>
 
-<script>
-import buttonView from './components/moButton/View'
-export default {
-  name: "App",
-  components: {
-    buttonView
-  }
-};
-</script>
-
 <style lang="scss">
-@import "./styles/common";
+@import "./styles/animate.css";
+@import "./styles/common.scss";
 </style>
